@@ -13,6 +13,7 @@
 		192B21D0208390A300E2AF8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192B21CE208390A300E2AF8F /* Main.storyboard */; };
 		192B21D2208390A300E2AF8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192B21D1208390A300E2AF8F /* Assets.xcassets */; };
 		192B21D5208390A300E2AF8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192B21D3208390A300E2AF8F /* LaunchScreen.storyboard */; };
+		192B21DE20839AB700E2AF8F /* JXTAlertTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 192B21DD20839AB700E2AF8F /* JXTAlertTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,10 @@
 		192B21D1208390A300E2AF8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192B21D4208390A300E2AF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		192B21D6208390A300E2AF8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192B21DC20839AB700E2AF8F /* JXTAlertTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertTools.h; sourceTree = "<group>"; };
+		192B21DD20839AB700E2AF8F /* JXTAlertTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertTools.m; sourceTree = "<group>"; };
+		192B21DF20839B1700E2AF8F /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		192B21E020839B1700E2AF8F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,10 @@
 				192B21CB208390A300E2AF8F /* ViewController.h */,
 				192B21CC208390A300E2AF8F /* ViewController.m */,
 				192B21CE208390A300E2AF8F /* Main.storyboard */,
+				192B21DC20839AB700E2AF8F /* JXTAlertTools.h */,
+				192B21DD20839AB700E2AF8F /* JXTAlertTools.m */,
+				192B21DF20839B1700E2AF8F /* Header.h */,
+				192B21E020839B1700E2AF8F /* PrefixHeader.pch */,
 				192B21D1208390A300E2AF8F /* Assets.xcassets */,
 				192B21D3208390A300E2AF8F /* LaunchScreen.storyboard */,
 				192B21D6208390A300E2AF8F /* Info.plist */,
@@ -152,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				192B21CD208390A300E2AF8F /* ViewController.m in Sources */,
+				192B21DE20839AB700E2AF8F /* JXTAlertTools.m in Sources */,
 				192B21CA208390A300E2AF8F /* AppDelegate.m in Sources */,
 				192B21C7208390A300E2AF8F /* main.m in Sources */,
 			);
@@ -276,6 +286,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z99H26Q7BL;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Videos/PrefixHeader.pch";
 				INFOPLIST_FILE = Videos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mufeng.Videos;
@@ -288,6 +300,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z99H26Q7BL;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Videos/PrefixHeader.pch";
 				INFOPLIST_FILE = Videos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mufeng.Videos;
