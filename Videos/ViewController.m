@@ -39,8 +39,6 @@
         }
     } cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitleArray:@[@"本地",@"Drobox",@"其他应用程序",@"itunes文件共享"] otherButtonStyleArray:nil];
     
-    
-    
 }
 - (void)presentDocumentPicker {
     NSArray *documentTypes = @[@"public.content", @"public.text", @"public.source-code ", @"public.image", @"public.audiovisual-content", @"com.adobe.pdf", @"com.apple.keynote.key", @"com.microsoft.word.doc", @"com.microsoft.excel.xls", @"com.microsoft.powerpoint.ppt"];
